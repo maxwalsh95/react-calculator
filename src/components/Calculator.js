@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 /** @jsx jsx */
 import { jsx, css } from '@emotion/core';
 import { evaluate } from 'mathjs';
@@ -19,9 +19,9 @@ export default function Calculator() {
     background-color: #afaff2;
     border-radius: 10px;
 
-    -webkit-box-shadow: 0px 20px 0px 0px rgba(66, 66, 135, 1);
-    -moz-box-shadow: 0px 20px 0px 0px rgba(66, 66, 135, 1);
-    box-shadow: 0px 20px 0px 0px rgba(66, 66, 135, 1);
+    -webkit-box-shadow: 0px 15px 0px 0px rgb(99, 99, 187);
+    -moz-box-shadow: 0px 15px 0px 0px rgb(99, 99, 187);
+    box-shadow: 0px 15px 0px 0px rgb(99, 99, 187);
 
     ${mq[2]} {
       width: 500px;

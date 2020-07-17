@@ -1,4 +1,3 @@
-import React from 'react';
 import Calculator from './components/Calculator';
 /** @jsx jsx */
 import { jsx, css } from '@emotion/core';
