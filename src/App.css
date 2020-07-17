@@ -1,0 +1,21 @@
+@import-normalize;
+
+* {
+  box-sizing: border-box;
+}
+html {
+  height: 100vh;
+}
+
+body {
+  height: 100vh;
+  margin: 0;
+  background-color: #fff3e4;
+}
+
+#root {
+  min-height: 100vh;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+}

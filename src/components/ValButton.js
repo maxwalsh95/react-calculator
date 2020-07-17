@@ -1,9 +1,18 @@
-import React, { useState } from "react";
+import React from 'react';
+import PropTypes from 'prop-types';
 
-function ValueButton(props) {
+function ValueButton({ className, onClick, value, display }) {
   return (
-    <button onClick={() => props.onClick(props.value)}>{props.display}</button>
+    <button className={className} type="button" onClick={() => onClick(value)}>
+      {display}
+    </button>
   );
 }
+
+ValueButton.propTypes = {
+  onClick: PropTypes.func,
+  value: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
+  display: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
+};
 
 export default ValueButton;
