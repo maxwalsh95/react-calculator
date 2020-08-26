@@ -70,8 +70,9 @@ export default function Calculator() {
       }
     `;
 
-  function appendToExpression(value) {
-    const isOperator = isNaN(parseInt(value, 10)) && value !== '.';
+  function appendToExpression(value, type) {
+    const isOperator =
+      isNaN(parseInt(value, 10)) && value !== '.' && type !== 'function';
 
     if (isOperator) {
       if (waitingForNum) return;

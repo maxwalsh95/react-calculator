@@ -7,7 +7,7 @@ export default function App() {
   const app = css`
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: center;
     padding: 10px;
     height: 100%;
   `;

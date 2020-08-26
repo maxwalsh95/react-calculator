@@ -1,9 +1,13 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-function ValueButton({ className, onClick, value, display }) {
+function ValueButton({ className, onClick, value, display, type }) {
   return (
-    <button className={className} type="button" onClick={() => onClick(value)}>
+    <button
+      className={className}
+      type="button"
+      onClick={() => onClick(value, type)}
+    >
       {display}
     </button>
   );
